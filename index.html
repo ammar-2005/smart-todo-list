@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ^ favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗓️</text></svg>"
+    />
+    <!-- ^ main css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>📝 My Tasks</h1>
+        <button class="theme-toggle" id="themeToggle">
+          <span id="themeIcon">🌑</span>
+        </button>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="🔍 Search tasks..." />
+      </div>
+
+      <div class="input-section">
+        <div class="input-wrapper">
+          <input type="text" id="todoInput" placeholder="Add a new task..." />
+        </div>
+
+        <div class="priority-selector" id="prioritySelector">
+          <button class="priority-btn high" data-priority="high">
+            🔴 High
+          </button>
+          <button class="priority-btn medium active" data-priority="medium">
+            🟡 Medium
+          </button>
+          <button class="priority-btn low" data-priority="low">🟢 Low</button>
+        </div>
+
+        <button class="add-btn" id="addBtn">Add Task</button>
+
+        <button class="update-btn d-none" id="updateBtn">Update Task</button>
+
+        <div class="error-message d-none" id="errorMessage">
+          enter a valid data, at least 4 char...
+        </div>
+      </div>
+
+      <ul class="todo-list" id="todoList">
+        <!-- <li class="todo-item priority-medium">
+          <div class="todo-content">
+            <div class="todo-text">check your email</div>
+            <span class="priority-badge medium">medium</span>
+          </div>
+          <div class="todo-actions">
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </div>
+        </li>
+
+        <li class="todo-item priority-high">
+          <div class="todo-content">
+            <div class="todo-text">check your email</div>
+            <span class="priority-badge high">medium</span>
+          </div>
+          <div class="todo-actions">
+            <button class="btn btn-edit">Edit</button>
+            <button class="btn btn-delete">Delete</button>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
