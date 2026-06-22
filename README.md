@@ -1,7 +1,6 @@
 📝 Smart To-Do List
 A clean, responsive To-Do List web app with dark/light mode, task priorities, live search, and full edit/delete support — built with vanilla HTML, CSS, and JavaScript (no frameworks, no dependencies).
 
-🔗 Live Demo: https://YOUR_USERNAME.github.io/smart-todo-list/
 
 Show Image Show Image Show Image Show Image
 
@@ -23,17 +22,6 @@ HTML5 — semantic structure
 CSS3 — custom properties (CSS variables) for theming, flexbox layout, responsive design
 JavaScript (ES6+) — DOM manipulation, event delegation, localStorage API
 No build tools, no frameworks, no npm packages — just plain web fundamentals.
-
-🚀 Getting Started
-Run locally
-Clone the repository:
-bash
-   git clone https://github.com/YOUR_USERNAME/smart-todo-list.git
-Navigate into the project folder:
-bash
-   cd smart-todo-list
-Open index.html directly in your browser, or use a local server (recommended), e.g. with the Live Server extension in VS Code.
-No installation, no dependencies — it just works.
 
 🧠 How It Works
 Tasks are stored as objects ({ text, priority }) in an array, persisted to localStorage under the todos key.
